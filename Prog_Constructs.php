@@ -57,16 +57,16 @@ print_r($read_array);
 
 
 //sorting results in ascending order
-for($i=0;$i<count($read_array);$i++)
+for($row=0;$row<count($read_array);$row++)
 {
-    for($j=0;$j<count($read_array)-1;$j++)
+    for($column=0;$column<count($read_array)-1;$column++)
     {
-        if($read_array[$j]>$read_array[$j+1])
+        if($read_array[$column]>$read_array[$column+1])
         {
             //swap numbers
-            $temp=$read_array[$j];
-            $read_array[$j]=$read_array[$j+1];
-            $read_array[$j+1]=$temp;
+            $temp=$read_array[$column];
+            $read_array[$column]=$read_array[$column+1];
+            $read_array[$column+1]=$temp;
         }
     }
 }
