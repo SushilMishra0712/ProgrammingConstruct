@@ -23,4 +23,7 @@ echo "Result of ".$c."+(".$a."/".$b.") is:".$result3."\n";
 $result4 = ($a%$b)+$c;
 echo "Result of (".$a."%".$b.")+".$c." is:".$result4."\n";
 
+$dictionary = array("UseCase-2"=>"$result1","UseCase-3"=>"$result2","UseCase-4"=>$result3,"UseCase-5"=>$result4);
+print_r($dictionary);
+
 ?>
