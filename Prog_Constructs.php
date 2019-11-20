@@ -56,4 +56,21 @@ echo "Sorted Results in descending order is\n";
 print_r($read_array);
 
 
+//sorting results in ascending order
+for($i=0;$i<count($read_array);$i++)
+{
+    for($j=0;$j<count($read_array)-1;$j++)
+    {
+        if($read_array[$j]>$read_array[$j+1])
+        {
+            //swap numbers
+            $temp=$read_array[$j];
+            $read_array[$j]=$read_array[$j+1];
+            $read_array[$j+1]=$temp;
+        }
+    }
+}
+echo "Sorted Results in ascending order is\n";
+print_r($read_array);
+
 ?>
