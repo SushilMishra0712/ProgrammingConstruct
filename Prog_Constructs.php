@@ -34,6 +34,26 @@ for($i=2;$i<$size_of_dictionary+2;$i++)
 {
     array_push($read_array,$dictionary["UseCase-".$i]);
 }
+
+
+//sorting results in descending order
+echo "Unsorted Results is\n";
 print_r($read_array);
+for($i=0;$i<count($read_array);$i++)
+{
+    for($j=0;$j<count($read_array)-1;$j++)
+    {
+        if($read_array[$j]<$read_array[$j+1])
+        {
+            //swap numbers
+            $temp=$read_array[$j];
+            $read_array[$j]=$read_array[$j+1];
+            $read_array[$j+1]=$temp;
+        }
+    }
+}
+echo "Sorted Results in descending order is\n";
+print_r($read_array);
+
 
 ?>
