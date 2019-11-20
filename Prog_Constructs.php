@@ -8,7 +8,12 @@ echo "Enter c : ";
 fscanf(STDIN,"%f",$c);
 
 //compute a+b*c 
-$result = $a+$b*$c;
-echo "Result of ".$a."+(".$b."*".$c.") is:".$result."\n";
+$result1 = $a+$b*$c;
+echo "Result of ".$a."+(".$b."*".$c.") is:".$result1."\n";
+
+//compute a*b+c
+$result2 = $a*$b+$c;
+echo "Result of (".$a."*".$b.")+".$c." is:".$result2."\n";
+
 
 ?>
